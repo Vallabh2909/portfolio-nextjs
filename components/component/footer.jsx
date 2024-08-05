@@ -58,7 +58,25 @@ function LinkedinIcon(props) {
     </svg>
   );
 }
-
+function MailIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 4H2c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z" />
+      <polyline points="22,6 12,13 2,6" />
+    </svg>
+  );
+}
 const Footer = () => {
   return (
     <footer className="bg-background border-t px-4 md:px-6 py-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -67,7 +85,7 @@ const Footer = () => {
       </p>
       <div className="flex gap-4">
         <Link
-          href="#"
+          href="https://github.com/Vallabh2909/"
           className="text-muted-foreground hover:text-foreground"
           prefetch={false}
         >
@@ -75,7 +93,7 @@ const Footer = () => {
           <span className="sr-only">GitHub</span>
         </Link>
         <Link
-          href="#"
+          href="https://www.linkedin.com/in/vallabhwasule2909"
           className="text-muted-foreground hover:text-foreground"
           prefetch={false}
         >
@@ -83,12 +101,20 @@ const Footer = () => {
           <span className="sr-only">LinkedIn</span>
         </Link>
         <Link
-          href="#"
+          href="https://x.com/vallabh_wa89401"
           className="text-muted-foreground hover:text-foreground"
           prefetch={false}
         >
           <TwitterIcon className="h-5 w-5" />
           <span className="sr-only">Twitter</span>
+        </Link>
+        <Link
+          href="mailto:vallabhwasule913@gmail.com"
+          className="text-muted-foreground hover:text-foreground"
+          prefetch={false}
+        >
+          <MailIcon className="h-5 w-5" />
+          <span className="sr-only">Mail</span>
         </Link>
       </div>
     </footer>

@@ -69,10 +69,47 @@ const Navbar = () => {
               Contact
             </Link>
           </nav>
-          <Button variant="outline" className="sm:hidden">
+          <Sheet>
+        <SheetTrigger asChild>
+          <Button variant="ghost" size="icon" className="lg:hidden">
             <MenuIcon className="h-6 w-6" />
             <span className="sr-only">Toggle navigation</span>
           </Button>
+        </SheetTrigger>
+        <SheetContent side="left" className="p-4 sm:p-6">
+          <div className="grid gap-6">
+            <Link
+              href="#about"
+              className="flex items-center gap-2 text-lg font-semibold"
+              prefetch={false}
+            >
+              About
+            </Link>
+            <Link
+              href="#projects"
+              className="flex items-center gap-2 text-lg font-semibold"
+              prefetch={false}
+            >
+              Projects
+            </Link>
+            <Link
+              href="#blogs"
+              className="flex items-center gap-2 text-lg font-semibold"
+              prefetch={false}
+            >
+              Blogs
+            </Link>
+            <Link
+              href="#contact"
+              className="flex items-center gap-2 text-lg font-semibold"
+              prefetch={false}
+            >
+              Contact
+            </Link>
+          </div>
+        </SheetContent>
+      </Sheet>
+
         </div>
       </header>
   );

@@ -13,7 +13,7 @@ import { Button } from "../ui/button";
 const BlogSection = () => {
   return (
     <section
-      id="projects"
+      id="blogs"
       className="bg-background py-10 mt-0 sm:py-10 xs:py-10 md:py-24 lg:py-32"
     >
       <div className="container px-4 md:px-6 flex flex-col items-center gap-8">
