@@ -23,11 +23,14 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title> Vallabh Wasule's Portfolio</title>
+        <title> Vallabh Wasule&apos;s Portfolio</title>
         <meta
           name="google-site-verification"
           content="NINMTEkBWGJuiuF9mpzOTAHN9iWKMdNyLmVaNFyZ9ZI"
         />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
+        <meta name="description" content="Vallabh Wasule - 3rd-year student at VIT Pune. Aspiring backend engineer with a focus on DevOps and cloud solutions. Passionate about building scalable and reliable applications. Explore my projects, skills, and experiences." />
+
       </head>
       <body
         className={cn("antialiased", fontHeading.variable, fontBody.variable)}
