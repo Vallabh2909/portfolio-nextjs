@@ -23,6 +23,7 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <head>
+        <title> Vallabh Wasule's Portfolio</title>
         <meta
           name="google-site-verification"
           content="NINMTEkBWGJuiuF9mpzOTAHN9iWKMdNyLmVaNFyZ9ZI"
